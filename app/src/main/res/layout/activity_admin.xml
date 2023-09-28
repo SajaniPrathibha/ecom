@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggg"
+    tools:context=".activities.AdminActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8ff7fd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Admin"></androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Add Item"
+        android:textColor="@color/textHeading"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <EditText
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="532dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Name"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_goneMarginTop="8dp" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="price"
+        android:inputType="number"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_goneMarginTop="8dp" />
+
+    <EditText
+        android:id="@+id/qty"
+        android:layout_width="188dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Qty"
+        android:inputType="number"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgUrl"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_goneMarginTop="8dp" />
+
+    <EditText
+        android:id="@+id/itemDes"
+        android:layout_width="328dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="296dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/imgUrl"
+        android:layout_width="325dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="  image Url"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="325dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="464dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="type"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_goneMarginTop="8dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="160dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="60dp"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="623dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="535dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
